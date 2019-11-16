@@ -127,6 +127,7 @@ class IntervalComponent extends React.Component {
 
 const Interval = connect(
   state => ({
+    timerIsStarted: state.timerIsStarted,
     currentInterval: state.currentInterval,
   }),
   dispatch => ({
