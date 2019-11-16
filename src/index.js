@@ -102,7 +102,7 @@ class IntervalComponent extends React.Component {
 
 const Interval = connect(
   state => ({
-    currentInterval: state,
+    currentInterval: state.currentInterval,
   }),
   dispatch => ({
     changeInterval: value => dispatch(changeInterval(value)),
@@ -154,5 +154,5 @@ ReactDOM.render(
   <Provider store={createStore(reducer, { currentInterval: 1 })}>
     <Timer />
   </Provider>,
-  document.getElementById('app'),
+  document.getElementById('root'),
 );
