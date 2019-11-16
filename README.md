@@ -1,68 +1,36 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# csssr-test-task
 
-## Available Scripts
+The project is a test task by CSSSR company
 
-In the project directory, you can run:
+## Condition
 
-### `yarn start`
+Slomux is a simple, broken Flux version.
+You have a simple app written in React + Slomux.
+That doesn't work with interval update settings.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Fix bugs and potentially problematic code, fix the application and comment on your decision.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+When you click on "start", the stopwatch should start and after a specified time interval increase its value by the interval value.
+When you click on "stop", the stopwatch must stop and reset its value.
 
-### `yarn test`
+## Fixed bugs
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Subscribe after the component is created in connect function](https://github.com/rukkiesman/csssr-test-task/commit/6c8ab20c898517b9335ef10268cd6d23dfa8f651)
+- [Correctly update currentInterval in reducer](https://github.com/rukkiesman/csssr-test-task/commit/52398849e4a43dafec083d1f6f5c57b49fbdc5a7)
+- [Return state upon default in reducer](https://github.com/rukkiesman/csssr-test-task/commit/eaa7c5f0653b6f064fc031fc4e5b7c1ba3841299)
+- [Correctly pass Slomux data to Interval](https://github.com/rukkiesman/csssr-test-task/commit/61d2eed192735368bbe9a4c90282acbb94790649)
+- [Bind this to TimerComponent methods](https://github.com/rukkiesman/csssr-test-task/commit/cf7c6c87c79b6315090e988fe922c193578e6dc4)
+- [Correctly pass currentInterval to Timer](https://github.com/rukkiesman/csssr-test-task/commit/8f7952733264a998f325c9a0df1d27858be5d280)
+- [Correctly pass currentInterval to Interval](https://github.com/rukkiesman/csssr-test-task/commit/67d81c639a937ac8b55f905e4bd7b73c157fe62b)
+- [Use setInterval for continuous timer operation in TimerComponent](https://github.com/rukkiesman/csssr-test-task/commit/0ee999f62b1da85c1cc43b779cd5348777ca4659)
+- [Interval time update in seconds](https://github.com/rukkiesman/csssr-test-task/commit/c60a0c0e8ed313e4e4cbd844c85a0c677438a8a9)
 
-### `yarn build`
+## Improvements
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Disable start button when timer is started](https://github.com/rukkiesman/csssr-test-task/commit/b51efef85407b65dcddd9d521d8425ce26d4ae2e)
+- [Disable stop button when timer isn't started](https://github.com/rukkiesman/csssr-test-task/commit/73446feb2f10f67e5fb8e8e10394ed28abd9d5ea)
+- [Disable interval buttons when timer is started](https://github.com/rukkiesman/csssr-test-task/commit/a8f66ec4749d01b3ca87283f6dee43c676852df0)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## License
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
