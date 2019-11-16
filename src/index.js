@@ -69,6 +69,10 @@ const STOP_TIMER = 'STOP_TIMER';
 const CHANGE_INTERVAL = 'CHANGE_INTERVAL';
 
 // action creators
+const startTimer = () => ({ type: START_TIMER });
+
+const stopTimer = () => ({ type: STOP_TIMER });
+
 const changeInterval = value => ({
   type: CHANGE_INTERVAL,
   payload: value,
