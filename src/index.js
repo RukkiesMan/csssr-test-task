@@ -86,7 +86,10 @@ const reducer = (state, action) => {
     case STOP_TIMER:
       return { ...state, timerIsStarted: false };
     case CHANGE_INTERVAL:
-      return { currentInterval: state.currentInterval + action.payload };
+      return {
+        ...state,
+        currentInterval: state.currentInterval + action.payload,
+      };
     default:
       return state;
   }
