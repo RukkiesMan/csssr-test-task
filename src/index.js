@@ -145,7 +145,12 @@ class TimerComponent extends React.Component {
           >
             Старт
           </button>
-          <button onClick={this.handleStop}>Стоп</button>
+          <button
+            onClick={this.handleStop}
+            disabled={!this.props.timerIsStarted}
+          >
+            Стоп
+          </button>
         </div>
       </div>
     );
