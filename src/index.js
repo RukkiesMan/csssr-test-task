@@ -81,6 +81,10 @@ const changeInterval = value => ({
 // reducers
 const reducer = (state, action) => {
   switch (action.type) {
+    case START_TIMER:
+      return { ...state, timerIsStarted: true };
+    case STOP_TIMER:
+      return { ...state, timerIsStarted: false };
     case CHANGE_INTERVAL:
       return { currentInterval: state.currentInterval + action.payload };
     default:
