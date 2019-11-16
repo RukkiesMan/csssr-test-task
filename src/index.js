@@ -76,7 +76,7 @@ const changeInterval = value => ({
 const reducer = (state, action) => {
   switch (action.type) {
     case CHANGE_INTERVAL:
-      return (state += action.payload);
+      return { currentInterval: state.currentInterval + action.payload };
     default:
       return {};
   }
