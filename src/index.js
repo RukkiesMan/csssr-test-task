@@ -168,7 +168,12 @@ const Timer = connect(
   state => ({
     currentInterval: state.currentInterval,
   }),
-  () => {},
+  dispatch => {
+    return {
+      startTimer: () => dispatch(startTimer()),
+      stopTimer: () => dispatch(stopTimer()),
+    };
+  },
 )(TimerComponent);
 
 // init
