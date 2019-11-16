@@ -144,7 +144,7 @@ class TimerComponent extends React.Component {
 
 const Timer = connect(
   state => ({
-    currentInterval: state,
+    currentInterval: state.currentInterval,
   }),
   () => {},
 )(TimerComponent);
