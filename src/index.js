@@ -92,7 +92,12 @@ class IntervalComponent extends React.Component {
           Интервал обновления секундомера: {this.props.currentInterval} сек.
         </span>
         <span>
-          <button onClick={() => this.props.changeInterval(-1)}>-</button>
+          <button
+            onClick={() => this.props.changeInterval(-1)}
+            disabled={this.props.currentInterval === 1}
+          >
+            -
+          </button>
           <button onClick={() => this.props.changeInterval(1)}>+</button>
         </span>
       </div>
