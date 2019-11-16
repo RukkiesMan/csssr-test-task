@@ -156,6 +156,7 @@ class TimerComponent extends React.Component {
     );
 
     this.setState({ intervalId });
+    this.props.startTimer();
   };
 
   handleStop = () => {
