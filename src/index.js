@@ -107,11 +107,18 @@ class IntervalComponent extends React.Component {
         <span>
           <button
             onClick={() => this.props.changeInterval(-1)}
-            disabled={this.props.currentInterval === 1}
+            disabled={
+              this.props.timerIsStarted || !(this.props.currentInterval > 1)
+            }
           >
             -
           </button>
-          <button onClick={() => this.props.changeInterval(1)}>+</button>
+          <button
+            onClick={() => this.props.changeInterval(1)}
+            disabled={this.props.timerIsStarted}
+          >
+            +
+          </button>
         </span>
       </div>
     );
