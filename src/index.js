@@ -166,7 +166,9 @@ const Timer = connect(
 
 // init
 ReactDOM.render(
-  <Provider store={createStore(reducer, { currentInterval: 1 })}>
+  <Provider
+    store={createStore(reducer, { timerIsStarted: false, currentInterval: 1 })}
+  >
     <Timer />
   </Provider>,
   document.getElementById('root'),
