@@ -133,7 +133,7 @@ class TimerComponent extends React.Component {
         this.setState({
           currentTime: this.state.currentTime + this.props.currentInterval,
         }),
-      this.props.currentInterval,
+      this.props.currentInterval * 1000,
     );
   };
 
