@@ -64,6 +64,8 @@ Provider.childContextTypes = {
 // APP
 
 // actions
+const START_TIMER = 'START_TIMER';
+const STOP_TIMER = 'STOP_TIMER';
 const CHANGE_INTERVAL = 'CHANGE_INTERVAL';
 
 // action creators
